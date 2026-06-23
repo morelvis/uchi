@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uchi Imóveis</title>
-    <meta name="description" content="Imobiliária premium especializada em locação de imóveis em bairros centrais e nobres de Porto Alegre - RS">
+    <title>Inquilinos | Uchi Imóveis</title>
+    <meta name="description" content="Informações, solicitações e serviços para inquilinos da Uchi Imóveis em Porto Alegre - RS">
     <meta name="keywords" content="imobiliária, imóveis, locação, Porto Alegre - RS">
     <link rel="icon" type="image/png" href="images/favicon.png">
 
@@ -19,7 +19,7 @@
     <meta name="twitter:description" content="Imobiliária premium especializada em locação de imóveis em bairros centrais e nobres de Porto Alegre - RS">
     <meta name="twitter:card" content="summary_large_image">    
     <meta name="twitter:image" content="https://uchiimoveis.com/images/og-image.png">
-
+    
     <style>
         /* latin */
         @font-face {
@@ -350,107 +350,195 @@
         /****    local    CSS   ****/
         /***************************/
         #hero-title {
+            padding: 60px 0 40px 0;
             font-family: var(--playfair);
-            font-size: 70px;
-            font-weight: 700;
-            letter-spacing: 2px;
-            color: var(--cream);
-        } 
-        @media (min-width: 500px) {
-            #hero-title { font-size: 90px; }
-        }
-        #hero-subtitle {
-            padding-bottom: 20px;
-            font-family: var(--playfair);
-            font-size: 33px;
-            font-style: italic;
+            font-size: 45px;
             font-weight: 400;
             color: var(--gold);
+        } 
+        @media (min-width: 600px) {
+            #hero-title { font-size: 60px; }
         }
         #hero-description {
-            padding: 30px 20px 24px 20px;
-            font-size: 20px;
-            line-height: 22px;
+            padding: 50px 20px 24px 20px;
+            font-size: 22px;
             font-weight: 400;
             color: var(--cream80);
+            opacity: 0.9;
         }
-        #break-description { display: none; }
-        @media (min-width: 900px) {
-            #break-description { display: block; }
+        #hero-especialista {
+            margin-top: 60px;        
         }
-        #hero-features {
-            padding-bottom: 20px;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 17px;
-            letter-spacing: 4px;
-            color: var(--cream80);
-            opacity: 0.65;
-        }
-        #hero-features p {
-            padding-top: 4px;
-        }
-        #hero-button-left, #hero-button-right {
-            display: inline-block;
-            margin: 20px;
-            min-height: 90px;
-            padding-top: 20px;
-            width: 280px;
-            vertical-align: top;
+        #main {
+            display: block;
+            padding: 70px 0 90px 0;
             text-align: center;
+            color: var(--black);  
+            background-color: var(--white);
+        }
+        #main-title {
+            padding-bottom: 30px;
+            color: var(--black);
+            font-family: var(--playfair);
+            font-size: 40px;
+            font-weight: 400;
+        }
+        @media (min-width: 600px) {
+            #main-title { font-size: 50px; }
+        }
+        #main-instruction {
+            margin-top: 20px;
+            padding-bottom: 30px;
+            font-size: 18px;
+            color: var(--greyblue);
+        }
+        #main-instruction-break { display: none; }
+        @media (min-width: 600px) {
+            #main-instruction-break { display: block; }
+        }
+        .form-group {
+            display: block;
+            margin: 0 auto;
+            padding: 20px 10px;
+            width: 100%;
+            max-width: 800px;
+            text-align: left;
+            border-radius: 5px;            
+        }
+        .form-group h2 {
+            padding-bottom: 12px;
+            color: var(--greyblue);
             font-size: 16px;
-            font-weight: 700;
-            letter-spacing: 4px;
-            border-radius: 4px;
-            transition: background-color 0.3s ease-out;
+            font-weight: 500;
+            letter-spacing: 1.4px;
         }
-        #hero-button-left {
-            color: var(--black80);
-            background-color: var(--gold);
+        .form-group button {
+            padding: 9px 0;
+            min-width: 60px;        
+            margin: 10px;
+            font-size: 15px;
+            border-radius: 5px;
+            border: 1px solid grey;
+            color: var(--black);
+            background-color: white;
         }
-        #hero-button-left:hover {
-            background-color: var(--gold-light);
+        .form-group.bairros button {
+            min-width: 130px;        
         }
-        #hero-button-right {
-            border: 2px solid var(--gold);
-            color: var(--gold);
-            background-color: transparent;
+        .form-group.infra button {
+            min-width: 170px;        
         }
-        #hero-button-right:hover {
-            color: var(--black80);
-            background-color: var(--gold);
-        }  
     </style>
 </head>
 <body>
 
     <header id="page-header">
-        <a href=""><img id="page-header-logo" src="images/logo-transparente.png" alt="Uchi Imóveis"></a>
+        <a href="index.html"><img id="page-header-logo" src="images/logo-transparente.png" alt="Uchi Imóveis"></a>
         <div id="page-header-spacer"></div>
         <label for="global-menu-control" id="page-header-hamburguer">&#9776;</label>
     </header>
     
     <div id="hero-div">
-        <h1 id="hero-title">UCHI IMÓVEIS</h1>
-        <p id="hero-subtitle">
-            <span class="no-break">Lares Selecionados</span> 
-            &amp; 
-            <span class="no-break">Gestão Ativa</span>
-        </p>
+        <h1 id="hero-title">INQUILINOS</h1>
         <div class="gold-trace"></div>
         <p id="hero-description">
-             Imobiliária premium especializada em locação de imóveis<br id="break-description">
-             nos bairros centrais e nobres <span class="no-break">de Porto Alegre</span>
+             <span class="no-break">Preencha suas preferências</span>
+             <span class="no-break">para encontrarmos o</span>
+             <span class="no-break">imóvel perfeito para você</span>
         </p>
-        <div id="hero-features">
-            <p>· CURADORIA EXCLUSIVA ·</p>
-            <p>· PLANEJAMENTO CONTÍNUO ·</p>
-            <p>· MENORES TAXAS ·</p>
-        </div>
-        <a id="hero-button-left" href="proprietarios.html">SOU<br>PROPRIETÁRIO</a>
-        <a id="hero-button-right" href="inquilinos.html">QUERO SER<br>INQUILINO</a>
+        <a id="hero-especialista" class="gold-button" href="" rel="noopener noreferrer" target="_blank">FALAR COM ESPECIALISTA</a>
     </div>
-    
+      
+    <main id="main">
+        <h1 id="main-title">O que você está procurando?</h1>
+        <div class="gold-trace"></div>
+        <p id="main-instruction">Preencha suas preferências e um especialista entrará em contato
+        <br id="main-instruction-break">com as melhores opções para você.</p>
+
+        <div class="form-group">
+            <h2>TIPO DE IMÓVEL</h2>
+            <button data-prefix="">Casa</button>
+            <button data-prefix="" style="min-width:120px">Apartamento</button>
+        </div>
+        <div class="form-group">
+            <h2>DORMITÓRIOS</h2>
+            <button data-prefix="quarto_">1</button>
+            <button data-prefix="quarto_">2</button>
+            <button data-prefix="quarto_">3</button>
+            <button data-prefix="quarto_">4+</button>
+        </div>
+        <div class="form-group">
+            <h2>BANHEIROS</h2>
+            <button data-prefix="banho_">1</button>
+            <button data-prefix="banho_">2</button>
+            <button data-prefix="banho_">3</button>
+            <button data-prefix="banho_">4+</button>
+        </div>
+        <div class="form-group">
+            <h2>VAGAS</h2>
+            <button data-prefix="vaga_">0</button>
+            <button data-prefix="vaga_">1</button>
+            <button data-prefix="vaga_">2</button>
+            <button data-prefix="vaga_">3+</button>
+        </div>
+        <div class="form-group bairros">
+            <h2>BAIRROS</h2>
+            <button data-prefix="">Auxiliadora</button>
+            <button data-prefix="">Azenha</button>
+            <button data-prefix="">Bela Vista</button>
+            <button data-prefix="">Boa Vista</button>
+            <button data-prefix="">Bom Fim</button>
+            <button data-prefix="">Centro Histórico</button>
+            <button data-prefix="">Cidade Baixa</button>
+            <button data-prefix="">Cristo Redentor</button>
+            <button data-prefix="">Farroupilha</button>
+            <button data-prefix="">Higienópolis</button>
+            <button data-prefix="">Independência</button>
+            <button data-prefix="">Jardim Botânico</button>
+            <button data-prefix="">Jardim Europa</button>
+            <button data-prefix="">Medianeira</button>
+            <button data-prefix="">Menino Deus</button>
+            <button data-prefix="">Moinhos de Vento</button>
+            <button data-prefix="">Mont'Serrat</button>
+            <button data-prefix="">Partenon</button>
+            <button data-prefix="">Passo d'Areia</button>
+            <button data-prefix="">Petrópolis</button>
+            <button data-prefix="">Praia de Belas</button>
+            <button data-prefix="">Rio Branco</button>
+            <button data-prefix="">Santa Cecília</button>
+            <button data-prefix="">Santana</button>
+            <button data-prefix="">São João</button>
+            <button data-prefix="">Três Figueiras</button>
+            <button data-prefix="">Vila Ipiranga</button>
+        </div>
+        <div class="form-group infra">
+            <h2>INFRAESTRUTURA</h2>
+            <button data-prefix="">Aceita pet</button>
+            <button data-prefix="">Ar condicionado</button>
+            <button data-prefix="">Bicicletário</button>
+            <button data-prefix="">Churrasqueira</button>
+            <button data-prefix="">Elevador</button>
+            <button data-prefix="">Espaço kids</button>
+            <button data-prefix="">Gás central</button>
+            <button data-prefix="">Lareira</button>
+            <button data-prefix="">Mobiliado</button>
+            <button data-prefix="">Piscina</button>
+            <button data-prefix="">Portaria 24h</button>
+            <button data-prefix="">Portaria Virtual</button>
+            <button data-prefix="">Quadra poliesportiva</button>
+            <button data-prefix="">Sala de jogos</button>
+            <button data-prefix="">Salão de festas</button>
+            <button data-prefix="">Vista livre</button>
+        </div>
+        <div class="form-group">
+            <h2>GARANTIA LOCATÍCIA</h2>
+            <button data-prefix="" style="min-width:120px">Seguro Fiança</button>
+            <button data-prefix="">Fiador</button>
+        </div>
+        
+        <button id="send-form" class="gold-button" style="margin-top:40px" onclick="sendForm()">Enviar preferências</button>
+    </main>    
+        
     <footer id="page-footer" class="selectable-text">
 
         <div class="page-footer-column">    
@@ -489,15 +577,15 @@
     </footer>
 
     <!-- *floating whatsapp button* -->
-    <a id="floating-whatsapp-link" href="" rel="noopener noreferrer" target="_blank"><svg viewBox="0 0 56 56"><circle cx="28" cy="28" r="28" fill="rgb(37,211,102)"/><g transform="translate(11.2 11.2) scale(1.4)"><path fill="white" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></g></svg></a>    
-            
+    <a id="floating-whatsapp-link" href="" rel="noopener noreferrer" target="_blank"><svg viewBox="0 0 56 56"><circle cx="28" cy="28" r="28" fill="rgb(37,211,102)"/><g transform="translate(11.2 11.2) scale(1.4)"><path fill="white" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></g></svg></a>   
+     
     <!-- *floating global menu* -->
     <input type="checkbox" id="global-menu-control">
     <div id="global-menu">
         <div id="global-menu-frame">
-            <a class="global-menu-link current" href="">Home</a><br>
+            <a class="global-menu-link" href="index.html">Home</a><br>
             <a class="global-menu-link" href="proprietarios.html">Proprietários</a><br>
-            <a class="global-menu-link" href="inquilinos.html">Inquilinos</a><br>
+            <a class="global-menu-link current" href="">Inquilinos</a><br>
         </div>
     </div>
 
@@ -536,9 +624,78 @@ function setWhatsAppLinks(phoneNumber, message, ids) {
 
 const PHONE_NUMBER = "5551993193073" // remember the link and the label aobout the fone icon!
 
+const buttons = [ ]
+const states = [ ] // false means off
+
+///////////////////////////////////////////////////////////////////////////////
+
+function manageButtons() {
+    
+    const groups = document.getElementsByClassName("form-group")
+
+    for (const group of groups) {
+    
+        for (const element of group.children) { manageButton(element) }
+    }
+}
+
+function manageButton(button) {
+
+    if (button.tagName != "BUTTON") { return }
+    
+    buttons.push(button)
+    states.push(false)
+    
+    button.onclick = function () {
+        
+        const index = buttons.indexOf(button)
+        states[index] = ! states[index]
+        
+        if (states[index]) {
+            button.style.color = "white"
+            button.style.backgroundColor = "var(--gold)"
+        }
+        else {
+            button.style.color = "var(--black)"
+            button.style.backgroundColor = "white"
+        }
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
+function sendForm() {
+
+    const choices = [ ]
+    
+    for (let index = 0; index < states.length; index++) {
+    
+        if (!states[index]) { continue }
+        
+        const button = buttons[index]
+        
+        choices.push(button.dataset.prefix + button.innerText)
+    }
+    let message = "Olá Uchi Imóveis! "
+    
+    if (choices.length == 0) { message += "Desejo informações!" } 
+    
+    else { message += "Eu escolhi ["+ choices.join(", ") + "]" }
+    
+    const href = createWhatsAppHref(PHONE_NUMBER, message)
+
+    window.open(href, "_blank", "noopener,noreferrer")
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
+manageButtons()
+
 const message = "Olá! Gostaria de saber mais sobre a Uchi Imóveis!"
 
-setWhatsAppLinks(PHONE_NUMBER, message, [ "page-footer-whatsapp-link", "floating-whatsapp-link" ])
+setWhatsAppLinks(PHONE_NUMBER, message, [ "hero-especialista", "floating-whatsapp-link", "page-footer-whatsapp-link" ])
+
     </script>
 </body>
 </html>
+
