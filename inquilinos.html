@@ -6,6 +6,7 @@
     <title>Inquilinos | Uchi Imóveis</title>
     <meta name="description" content="Informações, solicitações e serviços para inquilinos da Uchi Imóveis em Porto Alegre - RS">
     <meta name="keywords" content="imobiliária, imóveis, locação, Porto Alegre - RS">
+    <meta name="format-detection" content="telephone=no">
     <link rel="icon" type="image/png" href="images/favicon.png">
 
     <meta property="og:url" content="https://uchiimoveis.com">
@@ -462,24 +463,24 @@
         </div>
         <div class="form-group">
             <h2>DORMITÓRIOS</h2>
-            <button data-prefix="quarto_">1</button>
-            <button data-prefix="quarto_">2</button>
-            <button data-prefix="quarto_">3</button>
-            <button data-prefix="quarto_">4+</button>
+            <button data-prefix="quartos:">1</button>
+            <button data-prefix="quartos:">2</button>
+            <button data-prefix="quartos:">3</button>
+            <button data-prefix="quartos:">4+</button>
         </div>
         <div class="form-group">
             <h2>BANHEIROS</h2>
-            <button data-prefix="banho_">1</button>
-            <button data-prefix="banho_">2</button>
-            <button data-prefix="banho_">3</button>
-            <button data-prefix="banho_">4+</button>
+            <button data-prefix="banheiros:">1</button>
+            <button data-prefix="banheiros:">2</button>
+            <button data-prefix="banheiros:">3</button>
+            <button data-prefix="banheiros:">4+</button>
         </div>
         <div class="form-group">
             <h2>VAGAS</h2>
-            <button data-prefix="vaga_">0</button>
-            <button data-prefix="vaga_">1</button>
-            <button data-prefix="vaga_">2</button>
-            <button data-prefix="vaga_">3+</button>
+            <button data-prefix="vagas:">0</button>
+            <button data-prefix="vagas:">1</button>
+            <button data-prefix="vagas:">2</button>
+            <button data-prefix="vagas:">3+</button>
         </div>
         <div class="form-group bairros">
             <h2>BAIRROS</h2>
@@ -680,7 +681,7 @@ function sendForm() {
     
     if (choices.length == 0) { message += "Desejo informações!" } 
     
-    else { message += "Eu escolhi ["+ choices.join(", ") + "]" }
+    else { message += "Eu escolhi: "+ choices.join(", ") }
     
     const href = createWhatsAppHref(PHONE_NUMBER, message)
 
