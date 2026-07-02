@@ -420,7 +420,57 @@
         #hero-button-right:hover {
             color: var(--black80);
             background-color: var(--gold);
-        }  
+        } 
+        #diferenciais {
+            padding: 40px 10px 70px 10px;
+            text-align: center;
+            color: var(--black80);  
+            background-color: var(--white);
+            background-color: var(--gold-light);
+        }
+        #diferenciais h1 {
+            font-family: var(--playfair);
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 1.2;
+        }
+        #diferenciais h2 {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+        #diferenciais p {
+            display: inline-block;
+            max-width: 900px;
+            text-align: justify;
+            font-size: 18px; 
+            color: var(--black);  
+        }
+        #diferenciais .circle {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            margin-top: 40px;
+            padding: 10px 0 0 4px;
+            border: 2px solid var(--gold-dark);
+            border-radius: 50%;
+            background-color: var(--cream80);
+        }
+        #diferenciais .circle2 {
+            padding: 11px 0 0 2px;
+        }
+        #diferenciais .lucide-icon {
+            width: 45px; 
+            height: 45px; 
+            fill: none;
+            stroke: midnightblue;
+            stroke: var(--gold-dark);
+            stroke-width: 2;
+            stroke-linecap: round; 
+            stroke-linejoin: round;
+        }
     </style>
 </head>
 <body>
@@ -444,12 +494,44 @@
              nos bairros centrais e nobres <span class="no-break">de Porto Alegre</span>
         </p>
         <div id="hero-features">
-            <p>· CURADORIA EXCLUSIVA ·</p>
-            <p>· PLANEJAMENTO CONTÍNUO ·</p>
-            <p>· MENORES TAXAS ·</p>
+            <p>· 8% DE ADMINISTRAÇÃO ·</p>
+            <p>· GESTÃO DA MANUTENÇÃO ·</p>
+            <p>· INTERMEDIAÇÃO GRATUITA ·</p>
         </div>
         <a id="hero-button-left" href="proprietarios.html">SOU<br>PROPRIETÁRIO</a>
         <a id="hero-button-right" href="inquilinos.html">QUERO SER<br>INQUILINO</a>
+    </div>    
+    
+    <div id="diferenciais">
+        <h1><i>Nossos Diferenciais</i></h1>
+        <div class="circle"><svg class="lucide-icon" viewBox="0 0 24 24"><line x1="19" x2="5" y1="5" y2="19"></line><circle cx="6.5" cy="6.5" r="2.5"></circle><circle cx="17.5" cy="17.5" r="2.5"></circle></svg></div><br>
+        <h2>Taxa Única de 8%</h2>    
+        <p>Provavelmente é a menor taxa do mercado. 8% sobre o valor que o proprietário recebe pela locação e mais nada. Ao contrário de muitas imobiliárias, <b>não</b> cobramos por realizar vistoria, <b>não</b> cobramos taxa de visita por manutenção, <b>não</b> cobramos <i>taxa de intermediação</i> (captação de novo inquilino - muitas imobiliárias embolsam o primeiro aluguel pago a título de taxa de intermediação).</p><br>
+        
+        <div class="circle circle2"><svg class="lucide-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="m4.9 4.9 14.2 14.2"></path></svg></div><br>
+        <h2>Zero Taxas Ao Inquilino</h2>
+        <p>Muitas imobiliárias oneram os inquilinos com taxas que os proprietários nem imaginam que existem. O inquilino gasta <b>mas o proprietário não ganha</b>. Com a Uchi Imóveis é diferente. Não cobramos nem taxa bancária (despesa de DOC) do inquilino, consideramos que este é um custo nosso.</p><br>
+        
+        <div class="circle circle2"><svg class="lucide-icon" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg></div><br>
+        <h2>Seguro Incêndio Gratuito</h2>
+        <p>Normalmente o custo do seguro contra incêndio do imóvel recai sobre o inquilino. Mas quando o imóvel está desocupado, o custo é do proprietário. Como cortesia, a Uchi Imóveis arca com o custo do seguro contra incêndio dos imóveis desocupados.</p><br>
+        
+        <div class="circle circle2"><svg class="lucide-icon" viewBox="0 0 24 24"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"></path></svg></div><br>
+        <h2>Atendimento Premium</h2>
+        <p>Não usamos chatbot. Cada cliente nosso possui um assessor de alto nível para resolver todos os assuntos. Nada de o cliente ser jogado de um atendente para outro.</p><br>
+        
+        <div class="circle"><svg class="lucide-icon" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="m9 15 2 2 4-4"></path></svg></div><br>
+        <h2>Gestão Total do Imóvel</h2>
+        <p>Quando recebemos um imóvel vazio para locar, não apenas fazemos a vistoria, também administramos reparos e a limpeza necessários para deixá-lo atraente aos candidatos a inquilino. Estando o imóvel ocupado, fazemos a gestão completa de toda a manutenção, sem incômodo algum ao proprietário, mas sempre com a anuência prévia dele.</p><br>
+        
+        <div class="circle"><svg class="lucide-icon" viewBox="0 0 24 24"><path d="M3 3v16a2 2 0 0 0 2 2h16"></path><path d="M18 17V9"></path><path d="M13 17V5"></path><path d="M8 17v-3"></path></svg></div><br>
+        <h2>Multa Rescisória Justa</h2>
+        <!-- p>Nós nos esforçamos para deixar nossos clientes satisfeitos. Ficamos tristes quando um cliente quer nos deixar. Mas <b>não</b> "amarramos" cliente com multa rescisória <b>abusiva</b> como fazem algumas imobiliárias. Se a locação atual não foi intermediada por nós, <b>não existe multa</b>. Do contrário haverá uma multa equivalente à taxa de intermediação (um aluguel) que não aplicamos antes, calculada pro rata temporis considerando-se o período de 30 meses - a cada mês de locação administrada a multa diminui 1/30 (um trinta avos).</p><br -->
+        <p><b>Não</b> "amarramos" cliente com multa rescisória <b>abusiva</b> como fazem algumas imobiliárias. Se a locação atual não foi intermediada por nós, <b>não existe multa</b>. Do contrário haverá a multa de um aluguel (a taxa de intermediação que não cobramos antes), calculada pro rata temporis - a cada mês de locação administrada a multa diminui 1/30 avos.</p><br>
+        
+        <div class="circle circle2"><svg class="lucide-icon" viewBox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h2"></path><path d="M17 3h2a2 2 0 0 1 2 2v2"></path><path d="M21 17v2a2 2 0 0 1-2 2h-2"></path><path d="M7 21H5a2 2 0 0 1-2-2v-2"></path><circle cx="12" cy="12" r="3"></circle><path d="m16 16-1.9-1.9"></path></svg></div><br>
+        <h2>* Assessoria para Investir *</h2>
+        <p>Existem vários <b>mitos</b> disseminados sobre o bom imóvel para investir. Orientado por estes mitos o investidor não apenas pagará caro ao comprar o imóvel como ainda sofrerá para mantê-lo alugado. Teremos prazer em indicar um bom negócio imobiliário de acordo com seu perfil e também em assessorá-lo com contratos e demais documentos. <b>Tudo o que pedimos em troca</b> é que conte conosco na hora de alugar o imóvel adquirido.</p><br>
     </div>
     
     <footer id="page-footer" class="selectable-text">
