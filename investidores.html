@@ -1,0 +1,886 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investidores | Uchi Imóveis</title>
+    <meta name="description" content="Manual de investimento em imóveis urbanos. Pegadinhas a evitar.">
+    <meta name="keywords" content="imobiliária, imóveis, locação, Porto Alegre - RS">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <meta property="og:url" content="https://uchiimoveis.com">
+    <meta property="og:locale" content="pt_BR">    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Uchi Imóveis">
+    <meta property="og:description" content="Imobiliária premium especializada em locação de imóveis em bairros centrais e nobres de Porto Alegre - RS">
+    <meta property="og:image" content="https://uchiimoveis.com/images/og-image.png">
+
+    <meta name="twitter:title" content="Uchi Imóveis">
+    <meta name="twitter:description" content="Imobiliária premium especializada em locação de imóveis em bairros centrais e nobres de Porto Alegre - RS">
+    <meta name="twitter:card" content="summary_large_image">    
+    <meta name="twitter:image" content="https://uchiimoveis.com/images/og-image.png">
+    
+    <style>
+        /* latin */
+        @font-face {
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        /* latin */
+        @font-face {
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        /* latin */
+        @font-face {
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        /* latin */
+        @font-face {
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        /* latin */
+        @font-face {
+            font-family: 'Playfair Display';
+            font-style: italic;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/playfairdisplay/v40/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_qiTXtHA-Q.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        
+        :root {
+            --max-body-width: 1600px;
+            
+            --white: rgb(249,250,251); 
+            --black: rgb(15,28,46);    
+            --cream: rgb(246,244,238); 
+            --gold:  rgb(203,157,77);
+            --greyblue: rgb(98,112,132);
+            
+            --white80: rgba(249,250,251,0.8); 
+            --black80: rgba(15,28,46,0.8);     
+            --cream80: rgba(246,244,238,0.8);  
+            
+            --gold-light: rgb(217,198,166);
+            --gold-red:   rgb(210,150,60);
+            --gold-dark:  rgb(180,145,75);
+            
+            --dmsans: "DM Sans", system-ui, sans-serif;
+            --playfair: "Playfair Display", Georgia, serif;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+        html { 
+            color: var(--white);        
+            background-color: var(--black);
+        }
+        body {
+            width: 100%;
+            height: 100%;
+            min-width: 360px;
+            max-width: var(--max-body-width);
+            margin: 0 auto;
+            line-height: 1.5;
+            user-select: none;
+            font-family: var(--dmsans);
+        } 
+        div {
+            text-align: center;
+        }
+        img {
+            display: inline-block;
+            vertical-align: top;
+        }
+        a {
+            text-decoration: none;
+        } 
+        button {
+            cursor: pointer;
+        }
+        .no-break {
+            white-space: nowrap;
+        }
+        .selectable-text {
+            user-select: text;
+        }
+        #floating-whatsapp-link {
+            position: fixed;
+            z-index: 50;
+            width: 56px;
+            height: 56px;
+            right: 24px;
+            bottom: 24px;
+            filter: drop-shadow(1px 1px 3px rgba(0,0,0,0.6)); 
+            transition: all .2s ease-in-out;
+        }
+        #floating-whatsapp-link:hover {
+            transform: scale(1.1);
+        } 
+        #global-menu-control {
+            display: none;
+        }
+        #global-menu-control:checked ~ #global-menu {
+          transform: translateY(0);
+        }
+        #global-menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            padding-top: 80px;
+            transform: translateY(-100%);
+            transition: transform 0.3s ease;
+            z-index: 99;
+            background-image: url("images/desktop-hero.webp");
+            background-size: cover;
+            background-position: center center; 
+        } 
+        #global-menu-frame {
+            display: inline-block;
+            padding-top: 150px;
+            text-align: left;        
+        } 
+        #global-menu-frame a {
+            font-size: 40px; 
+            font-family: var(--playfair);
+            font-style: italic;
+            color: var(--white);  
+        }
+        #global-menu-frame a.current {
+            pointer-events: none;
+            color: var(--gold-red);
+        }
+        #page-header
+        {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            min-height: 64px;
+            white-space: nowrap;
+            text-align: center;
+            border-bottom: 1px solid rgba(40,70,90,0.5);
+            color: var(--white);
+            background-color: var(--black);
+        }
+        #page-header-logo
+        {
+            width: 140px;
+            height: 42px;
+            margin-top: 12px;   
+        }
+        #page-header-spacer {
+            display: inline-block;
+            width: 140px;
+            max-width: 900px;
+            visibility: hidden;
+        }
+        @media (min-width: 500px) {
+            #page-header-spacer { width: calc((100% - 220px) * 0.8); }
+        }        
+        #page-header-hamburguer {
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 32px;
+            cursor: pointer;
+        }
+        #hero-div {
+            min-height: 100vh;
+            padding: 90px 10px 30px 10px;
+            overflow-anchor: none; /* avoid chrome bug on animation */
+            background-image: url("images/desktop-hero.webp");
+            background-size: cover;
+            background-position: center center;
+            animation: hero-div 0.75s ease-out;
+        }
+        @keyframes hero-div {
+            from { padding-top: 2000px; } to { padding-top: 90px; }
+        }    
+        #page-footer {
+            width: 100%;
+            padding: 20px 0 30px 0;        
+            text-align: center;
+            font-size: 16px;
+            letter-spacing: 1px;
+            color: var(--cream80);
+        }        
+        .page-footer-column {
+            display: inline-block;
+            width: 340px;
+            padding-left: 20px;
+            margin-top: 30px;
+            text-align: left;
+            vertical-align: top;
+        }   
+        .page-footer-spacer {
+            display: inline-block;        
+            width: max(0px, calc((100% - 1090px) / 4));
+            height: 20px;
+        }
+        #page-footer-logo {
+            width: 197px;
+            height: 59px;
+            margin-top: 13px;
+        }
+        #page-footer-slogan {
+            padding-bottom: 10px;
+            opacity: 0.75;
+        }
+        .page-footer-title {      
+            padding: 20px 0 10px 0;
+            opacity: 0.75;
+        }
+        .page-footer-icon {        
+            display: inline-block;
+            width: 18px;
+            height: 18px;      
+            margin-right: 12px;
+            vertical-align: -4px;
+            color: var(--gold);
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+        #page-footer-whatsapp-icon {        
+            display: inline-block;
+            width: 18px;
+            height: 18px;      
+            margin-right: 12px;
+            vertical-align: -4px;
+            color: var(--gold);
+            fill: currentColor;
+            stroke: none;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+        .page-footer-field {        
+            margin-right: 10px;      
+            color: var(--gold);
+        } 
+        #page-footer-separator {
+            margin-top: 50px;
+            padding-bottom: 30px;
+            border-top: 1px solid var(--cream);
+            opacity: 0.2;
+        }
+        #page-footer-copyright {
+            font-size: 16px;
+            color: var(--cream);
+            opacity: 0.3;
+            
+        } 
+        
+        /***************************/
+        /****  utility classes  ****/
+        /***************************/
+        
+        .gold-trace {
+            display: block;
+            width: 100px;
+            margin: 0 auto;
+            height: 2px;
+            background-color: var(--gold);    
+        }  
+        .gold-button {
+            display: inline-block;
+            padding: 22px 60px;
+            font-size: 17px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            border-radius: 4px;
+            color: var(--black80);
+            background-color: var(--gold);
+        }   
+                 
+        /* unused */
+        .triple-card { 
+            display: inline-block;
+            width: 350px;
+            height: 200px;
+            padding: 20px;
+            margin-top: 50px;
+            vertical-align: top;
+            text-align: left;
+            font-size: 18px; 
+            font-family: sans-serif;  
+            border-radius: 15px;
+            border: 1px solid dimgrey;
+            filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.6));
+            color: black;
+            background-color: lightgrey;
+        }
+        @media (min-width: 650px) {
+            .triple-card { margin-left: 20px; margin-right: 20px; }
+        }
+        @media (min-width: 1300px) {
+            .triple-card { margin-left: 30px; margin-right: 30px; }
+        }
+    </style>
+    <style>
+        /***************************/
+        /****    local    CSS   ****/
+        /***************************/
+        #hero-title {
+            padding: 90px 0 40px 0;
+            font-family: var(--playfair);
+            font-size: 45px;
+            font-weight: 400;
+            color: var(--gold);
+        } 
+        @media (min-width: 600px) {
+            #hero-title { font-size: 60px; }
+        }
+        #hero-description {
+            padding: 50px 10px 24px 10px;
+            font-size: 22px;
+            font-weight: 400;
+            color: var(--cream80);
+            opacity: 0.9;
+        }
+        #indice {
+            display: block;
+            padding: 70px 0 30px 0;
+            text-align: center;
+            color: var(--black);  
+            background-color: var(--white);
+        }
+        #indice-title {
+            padding-bottom: 30px;
+            color: var(--black);
+            font-family: var(--playfair);
+            font-size: 40px;
+            font-weight: 400;
+        }
+        @media (min-width: 600px) {
+            #indice-title { font-size: 50px; }
+        }
+        #indice-instruction {
+            margin-top: 20px;
+            padding-bottom: 20px;
+            font-size: 18px;
+            color: var(--greyblue);
+        }
+        .indice-frame {
+            display: inline-block;
+            width: 100%;
+            max-width: 600px;
+            padding: 0 10px;
+            text-align: left;
+        }
+        .indice-link {
+            display: inline-block;
+            padding-bottom: 20px;
+            font-size: 20px;
+            font-style: italic;
+            text-decoration: underline;
+            color: var(--gold-dark);
+        }
+        #artigos {
+            padding: 20px 0 50px 0;
+            color: var(--black);
+            background-color: white;
+        }
+        article {
+            display: inline-block;
+            padding: 10px 10px 30px 10px;
+            width: 100%;
+            max-width: 900px;
+            scroll-snap-align: start;
+            scroll-margin-top: 70px;
+        }
+        article h2 {
+            text-align: left; 
+            font-family: var(--playfair);
+            font-size: 28px;
+            font-weight: 500;
+            color: var(--gold-dark);        
+        }
+        article p {
+            display: inline-block;
+            width: 100%;
+            padding-top: 10px;
+            text-align: justify; 
+            font-size: 18px;
+            color: var(--greyblue);
+        }
+        article a {
+            display: inline-block;
+            margin-top: 20px;
+            color: var(--gold-dark);
+        }
+    </style>
+</head>
+<body>
+
+    <header id="page-header">
+        <a href="index.html"><img id="page-header-logo" src="images/logo-transparente.png" alt="Uchi Imóveis"></a>
+        <div id="page-header-spacer"></div>
+        <label for="global-menu-control" id="page-header-hamburguer">&#9776;</label>
+    </header>
+    
+    <div id="hero-div">
+        <h1 id="hero-title">INVESTIDORES</h1>
+        <div class="gold-trace"></div>
+        <p id="hero-description">
+             <span class="no-break">Investimento em imóvel urbano</span>
+             <br>
+             <span class="no-break">Principais fundamentos</span>
+             <br>
+             <span class="no-break">Como evitar as pegadinhas</span>
+        </p>
+    </div>
+      
+    <div id="indice">
+        <h1 id="indice-title">Artigos</h1>
+        <div class="gold-trace"></div>
+        <p id="indice-instruction">
+             <span class="no-break">É preferível que os artigos sejam</span>
+             <span class="no-break">lidos em sua ordem natural</span>
+        </p>
+        <br>
+        <div class="indice-frame">
+            <a class="indice-link" href="#imovel-bom-investimento">Imóvel é um bom investimento?</a>
+            <br>
+            <a class="indice-link" href="#apartamento-ou-sala">Apartamento ou sala comercial?</a>
+            <br>
+            <a class="indice-link" href="#falta-vaga">Pegadinha: sala comercial sem vaga</a>
+            <br>
+            <a class="indice-link" href="#vaga-maluca">Pegadinha: o incrível caso da vaga maluca</a>
+            <br>
+            <a class="indice-link" href="#loja-no-terreo">Pegadinha:  loja no térreo de prédio residencial</a>
+            <br>
+            <a class="indice-link" href="#galeria-fechada">Pegadinha: loja em galeria de acesso único</a>
+            <br>
+            <a class="indice-link" href="#usado-ou-novo">Pegadinha: comprar imóvel novo</a>
+            <br>
+            <a class="indice-link" href="#sofisticado-demais">Pegadinha: sala comercial sofisticada</a>
+            <br>
+            <a class="indice-link" href="#condominio-alto">Pegadinha: condomínio alto</a>
+            <br>
+            <a class="indice-link" href="#predio-airbnb">Pegadinha: prédio para Airbnb</a>
+            <br>
+            <a class="indice-link" href="#cinco-anos">Pegadinha: prazo do aluguel de loja</a>
+            <br>
+            <a class="indice-link" href="#comprar-na-planta">Pegadinha: comprar na planta</a>
+            <br>
+            <a class="indice-link" href="#aluguel-caro">Meu aluguel está caro?</a>
+            <br>
+            <a class="indice-link" href="#baixar-aluguel">Vale a pena baixar o aluguel?</a>
+            <br>
+            <a class="indice-link" href="#conta-notarial">Conta Notarial: segurança do negócio</a>
+            <br>
+            <a class="indice-link" href="#imovel-investidor">O que é um imóvel de investidor?</a>
+        </div>
+    </div>  
+    
+    <div id="artigos">
+        <article id="imovel-bom-investimento">
+            <h2>Imóvel é um bom investimento?</h2>
+            <p>Todo investimento deve ser analisado segundo três características principais: segurança, liquidez e rentabilidade. Podemos também considerar uma quarta característica: a facilidade de administração.<br><br>
+            Nenhum tipo de investimento é perfeito em todos os pontos. Quando um tipo é muito forte em um ponto, algum outro é menos desejável.<br><br>
+            O investimento em imóvel se destaca pela segurança.<br><br>
+            Diferente de ativos financeiros, um imóvel é um bem físico, concreto, registrado em cartório e que não pode ser roubado (hackeado ou transferido sob coação). Seu valor não é corroído pela inflação, pois este é um mal específico de ativos monetários.<br><br>
+            Também não depende da saúde financeira da instituição na qual você investiu seu dinheiro, seja banco, seja governo ou outra instituição. Recentemente, tivemos o caso Banco Master. E mega investidores já comentam que a dívida pública federal atual é impagável.<br><br>
+            Quem viveu ou conhece a história do Plano Collor lembra que dinheiro em conta e aplicações financeiras (incluindo a Caderneta de Poupança — declarada intocável pelo governo) foram bloqueados de forma abrupta, causando enormes dificuldades e insegurança para poupadores e investidores. Havia sérias dúvidas se o dinheiro seria devolvido ou não. Foi devolvido em parte: 100% do valor nominal, sendo o valor real muito corroído pela inflação da época.<br><br>
+            O imóvel, por ser um bem físico e registrado em cartório, não está sujeito ao mesmo tipo de bloqueio instantâneo que pode atingir recursos financeiros depositados no sistema bancário. Ele acarreta impostos e está sujeito a despesas, penhoras em situações específicas e até desapropriação nos casos previstos em lei, mas não desaparece da conta de um dia para o outro por uma medida bancária.<br><br>
+            O imóvel é campeão no quesito segurança patrimonial. Ele é menos líquido, muitas vezes rende menos, exige manutenção e administração, mas oferece uma proteção concreta contra os riscos que afetam investimentos puramente financeiros.<br><br>
+            Sua liquidez, porém, não é necessariamente ruim. Varia muito.<br><br>
+            Um apartamento bem localizado, de um ou dois dormitórios, em região com demanda constante, pode ser vendido com relativa rapidez se estiver com preço correto. Já uma mansão de luxo, enorme, muito específica e cara, pode demorar anos — ou até décadas — para encontrar comprador.<br><br>
+            Por isso, quando alguém diz que “imóvel não tem liquidez”, está simplificando demais.<br><br>
+            A rentabilidade do imóvel é um tópico mais complexo.<br><br>
+            Mesmo quando o valor do aluguel parece bom, o investidor precisa considerar manutenção, vacância, condomínio, IPTU, reformas, inadimplência, desvalorização por envelhecimento e impostos.<br><br>
+            Ao longo dos anos, o prédio envelhece. Pode ser necessário trocar instalações hidráulicas e elétricas, piso, pintura, esquadrias, elevadores, fachada e outros itens. Tudo isso reduz a rentabilidade real.<br><br>
+            Mesmo que o prédio antigo tenha sido construído com excelência e tenha mínima necessidade de manutenção, ele tende a perder o apelo comercial que possuía quando era novo. Também existe o fator região. Ao longo de décadas, algumas regiões se valorizam enquanto outras se desvalorizam.<br><br>
+            Um terreno bem localizado usado para estacionamento é um exemplo de imóvel ideal para investimento. Desvalorização zero, manutenção zero (ou quase zero) e renda contínua com locação. Por ser um ótimo negócio, também encontrará compradores se for necessário.<br><br>
+            Sobre a facilidade ou dificuldade de administração do imóvel para aluguel, conte com nossos serviços. Fazemos a gestão total da locação do imóvel. Manter seus imóveis aos nossos cuidados exigirá tão pouco esforço seu quanto manter suas aplicações financeiras.<br><br>
+            Apenas começamos a falar sobre o assunto imóvel como investimento.<br><br>
+            Nos próximos posts deste blog vamos aprofundar o assunto e falar das pegadinhas armadas contra o investidor em imóveis!
+</p>
+            <a href="#indice">índice</a>
+        </article>
+    
+        <article id="apartamento-ou-sala">
+            <h2>Apartamento residencial ou sala comercial: qual é melhor para investir?</h2>
+            <p>Muita gente acredita que sala comercial é sempre melhor para investir do que apartamento residencial.<br><br>
+            A ideia parece fazer sentido.<br><br>
+            A locação comercial parece mais profissional, pois o inquilino será uma empresa. Não uma família com crianças e cachorros.<br><br>
+            Prédios comerciais modernos costumam ter estrutura de concreto coberta por alumínio e vidro: manutenção próxima de zero. A sala é apenas um espaço sem paredes divisórias com um lavabo em um canto. Bons edifícios comerciais também contam com portaria, controle de acesso e segurança, o que diminui muito a possibilidade de arrombamento e vandalismo.<br><br>
+            Contra a locação de imóveis residenciais pesa a fama de não se conseguir reaver o imóvel mesmo quando o valor do aluguel foi corroído pela inflação até tornar-se irrisório e a fama de às vezes o imóvel ser muito danificado por maus inquilinos.<br><br>
+            Se pararmos a análise aqui, ficaremos com a ideia de fugir da locação de imóveis residenciais e abraçar alegremente a compra de salas comerciais. E estaremos totalmente equivocados!<br><br>
+            COMPRAR SALAS COMERCIAIS PARA ALUGAR NÃO É TÃO BOM ASSIM, pelo simples fato de que existe um excesso de oferta deste tipo de imóvel para locar. Os investidores adoram comprar salas comerciais e as construtoras adoram construí-las, pois os prédios são rápidos e simples de construir e porque são de venda à vista e rápida para investidores. Há casos em que todas as unidades são vendidas mesmo antes da obra começar!<br><br>
+            Excesso de oferta significa aluguéis menores e, pior ainda, não se conseguir inquilino e ficar o investidor arcando com o IPTU e condomínio (normalmente alto para prédios com equipe de segurança e portaria sofisticada). Um ativo adquirido para ser rentável torna-se um ativo oneroso.<br><br>
+            O papel das construtoras é produzir unidades e vender pelo maior preço possível e o mais rápido que puderem. Não é problema delas se o investidor vai conseguir ou não alugar as salas comerciais que comprou. Mas o típico corretor de imóveis sempre dirá que comprar uma cara sala comercial no lançamento de um prédio sofisticado é o melhor negócio que você pode fazer.<br><br>
+            Falaremos mais sobre imóveis comerciais em outros artigos.<br><br>
+            COMPRAR APARTAMENTOS PARA ALUGAR NÃO É RUIM, mas no passado era horrível mesmo!<br><br>
+            A Lei do Inquilinato de 1991 (https://www.planalto.gov.br/ccivil_03/leis/l8245.htm) veio justamente corrigir e modernizar os contratos de locação. O prazo de locação é de 30 meses. Ao término dele, o contrato passa a vigorar por prazo indeterminado. Isto permite ao proprietário reaver o imóvel cujo inquilino não aceitar renegociar a locação a valor justo!<br><br>
+            Danos causados pelo inquilino não significam mais prejuízo ao proprietário. Em primeiro lugar, a Uchi Imóveis seleciona os inquilinos. Ela também faz vistorias rigorosas e documentadas de entrada e de saída. Eventuais danos são facilmente identificados e comprovados. E, finalmente, hoje em dia é muito comum o uso de seguro fiança locatícia, o qual cobre também danos ao imóvel. O valor de cobertura mais usado para danos ao imóvel é de R$ 50 mil.<br><br>
+            A vacância de apartamentos para locação é baixa, pois as construtoras não inundam o mercado de apartamentos. Elas sabem que, normalmente, os investidores não compram apartamentos zero-quilômetro para alugar — exatamente o oposto do que acontece com as salas comerciais.<br><br>
+            Bons apartamentos de um dormitório e vaga na garagem têm grande procura tanto para compra como para locação. Eles atendem casais jovens, pessoas que moram sozinhas — tendência cada vez mais comum — e estudantes que vêm do interior para a capital. E são de locação mais resiliente: durante crises econômicas, famílias mudam para apartamentos menores.</p>
+            <a href="#indice">índice</a>
+        </article>
+    
+        <article id="falta-vaga">
+            <h2>Pegadinha: sala comercial sem vaga própria e sem estacionamento para clientes</h2>
+            <p>Nunca compre sala comercial que não possua uma ou duas vagas de garagem próprias e estacionamento próximo — preferencialmente no mesmo prédio — para clientes, seja ele pago ou não.<br><br>
+            A falta de vagas de estacionamento inviabiliza totalmente a sala para uso por médicos, dentistas, advogados, psicólogos, consultores etc. Em suma, qualquer atividade que implique receber clientes.<br><br>
+            O estacionamento público é especialmente importante para o acesso de idosos, pessoas com mobilidade reduzida, pacientes enfermos, famílias com crianças e clientes que portam objetos volumosos e/ou pesados. Além do tormento em dias de chuva forte.<br><br>
+            E a vaga própria significa conforto e tranquilidade para o profissional que alugará a sala, em vez de deixar diariamente o carro com um manobrista em estacionamento rotativo.<br><br>
+            Salas para locação sem estacionamento adequado estão associadas a alta vacância, alta rotatividade, maior inadimplência e aluguéis menores, pois normalmente falta robustez financeira ao inquilino que aceita alugar uma sala assim. O proprietário aceita receber menos para manter a sala alugada e não arcar com seu custo fixo: condomínio e IPTU.<br><br>
+            Além disso, elas são difíceis de vender, justamente pela locação não ser atrativa.<br><br>
+            Infelizmente, a maioria dos novos edifícios não possui espaço de estacionamento adequado. Então, as construtoras costumam deixar o estacionamento como área comum do condomínio. O destino desse espaço é definido pela assembleia geral do condomínio em sua primeira reunião. Normalmente, o projeto do prédio já prevê se o estacionamento será explorado, no todo ou em parte, por empresa especializada.<br><br>
+            Prepare-se para ter problemas com vagas nesse sistema:<br><br>
+            1. Em algum momento, o estacionamento poderá estar lotado, sem vaga para o inquilino e seu cliente.<br><br>
+            2. A administradora do estacionamento poderá prestar mau serviço e/ou cobrar caro.<br><br>
+            3. Há motoristas que não gostam de entregar o carro a um manobrista.<br><br>
+            4. No caso de vagas do condomínio a serem distribuídas aos condôminos, normalmente haverá disputa pelas melhores vagas. E, principalmente, disputa para não ficar sem vaga, pois, se existissem vagas para todos, elas teriam sido vendidas junto com as salas.<br><br>
+            E existem situações piores! Vamos citar três casos reais, todos eles envolvendo prédios de alto padrão.<br><br>
+            PRIMEIRA PEGADINHA ESPECIAL<br><br>
+            Em uma região sem estacionamento aberto ao público, a construtora vendeu as salas, mas ficou com as vagas de estacionamento para si. E cobrava preços abusivos pelo aluguel dessas vagas. O condomínio não podia fazer nada. Os proprietários eram obrigados a baixar muito o aluguel para que o custo total para o inquilino não inviabilizasse a locação. Na prática, o aluguel da vaga — sem nenhuma manutenção e com condomínio e IPTU bem menores — valia mais do que o dobro do aluguel da sala!<br><br>
+            SEGUNDA PEGADINHA ESPECIAL<br><br>
+            Nesta pegadinha, a construtora deixou as vagas escrituradas em nome do condomínio. Uma parte delas destinada a ser explorada por uma administradora de estacionamento, e outra parte destinada ao uso privativo dos condôminos. Uma vaga para cada sala. Parecia perfeito!<br><br>
+            Em vez de demarcar as vagas com tinta, a construtora deixou essa tarefa para o síndico. Coube ao síndico também definir qual vaga caberia a cada condômino. À medida que o prédio começou a ser ocupado, os novos proprietários passaram a reclamar da demarcação feita pelo síndico e convocaram uma assembleia para revisar toda a demarcação.<br><br>
+            Estranho. Se havia uma vaga para cada sala, mais um espaço para exploração comercial, por que a construtora não demarcou previamente as vagas e vendeu cada uma junto com cada sala, evitando transtornos?<br><br>
+            Quando examinamos cuidadosamente o estacionamento, descobrimos o motivo. Havia espaço em metros quadrados suficiente para todas as vagas prometidas. Mas o projeto do estacionamento tinha defeitos seríssimos: pilares que ocupavam o centro de vagas e vagas que, quando ocupadas, bloqueavam o acesso a outras vagas! A construtora enganou os compradores. Se ela própria tivesse demarcado as vagas privativas, ficaria claro que metade delas era inútil para automóveis!<br><br>
+            TERCEIRA PEGADINHA ESPECIAL<br><br>
+            O próximo artigo é dedicado exclusivamente a ela. Ela merece!</p>
+            <a href="#indice">índice</a>
+        </article>
+
+        <article id="vaga-maluca">
+            <h2>Pegadinha: o incrível caso da vaga maluca</h2>
+            <p>Estávamos assessorando um cliente que queria comprar uma ótima sala comercial. Encontramos, em excelente localização, um prédio com 10 anos de idade, tão bem construído que parecia novo. A sala era grande, com ótima arquitetura, excelente mobiliário e excelente vista. O preço estava na média do mercado, mas a qualidade do imóvel era acima da média.<br><br>
+            Não havia estacionamento aberto ao público. Só isso já era uma "red flag". Perguntamos sobre vagas privativas, e a proprietária respondeu que havia uma, escriturada. Curiosamente, ela não estacionava na vaga: entregava o carro ao manobrista, que o estacionava onde preferisse. Estranho! Se você tem uma vaga escriturada, você estaciona nela.<br><br>
+            Quando checamos a documentação da sala e da vaga de garagem, encontramos uma penhora na vaga. O credor era o Município de Porto Alegre, por falta de pagamento de IPTU. A proprietária jurou de pés juntos que sempre pagou o IPTU. Prometeu nos enviar os comprovantes. Após uma semana, recebemos os comprovantes de todos os pagamentos de IPTU desde a construção do prédio. Não fazia sentido!<br><br>
+            O valor do débito que originara a penhora era irrisório: não pagaria um picolé. Sabemos que o IPTU de uma vaga de garagem não é alto, mas aquela garagem não teria um IPTU tão baixo. Muito estranho!<br><br>
+            Quando recebemos a certidão dos imóveis, tudo se esclareceu. A sala tinha registro normal. Mas a vaga de garagem tinha 32 proprietários — repito: TRINTA E DOIS!<br><br>
+            A certidão da matrícula da vaga era difícil de ler devido à quantidade de proprietários cadastrados.<br><br>
+            Por isso, o IPTU era baixo. Era o valor normal dividido por 32! Bastava um proprietário esquecer de pagar o IPTU para a vaga estar sujeita a penhora!<br><br>
+            O edifício tinha menos vagas do que salas. Em vez de vender apenas as salas e deixar as vagas em nome do condomínio, para futuro estacionamento rotativo, a construtora vendeu, para cada comprador de sala, 1/32 de cada uma das 20 vagas. Uma aberração absoluta!<br><br>
+            Eu imagino o corretor de imóveis representando a construtora, 10 anos atrás: "A vaga de garagem é escriturada! Sim, senhora!"<br><br>
+            Aconselhamos veementemente nosso cliente a não prosseguir com a negociação. Ele, de fato, desistiu. Quinze dias depois, a vendedora nos contatou, oferecendo um desconto de 20%. Seguindo nossa orientação, nosso cliente respondeu que não estava mais interessado.<br><br>
+            A lição é simples: não basta perguntar se “tem vaga”. A vaga de garagem precisa ser analisada com o mesmo cuidado que a própria unidade principal.</p>
+            <a href="#indice">índice</a>
+        </article>    
+    
+        <article id="loja-no-terreo">
+            <h2>Pegadinha: loja no térreo de prédio residencial</h2>            
+            <p>Muitos edifícios residenciais novos já não têm apartamentos no andar térreo. Esse espaço é usado para garagem, áreas comuns ou lojas comerciais.<br><br>
+            Quando a construtora decide criar uma loja no andar térreo, ela faz isso para maximizar sua receita com o empreendimento. Talvez não tenha considerado a viabilidade do ponto comercial. Esse problema fica para o novo proprietário.<br><br>
+            O investidor compra a loja baseando-se no mito de que lojas são ótimos imóveis para alugar, o que é verdadeiro em muitos casos.<br><br>
+            O investimento em uma loja exige uma análise profissional do ponto comercial. Se o ponto não gerar movimento e faturamento suficientes para sustentar os negócios ali instalados, entramos no círculo vicioso de inadimplência, despejo, vacância e aluguéis baixos.<br><br>
+            O movimento dos moradores do edifício raramente é suficiente para sustentar uma loja. O ponto precisa ser analisado em relação à rua, ao fluxo de pedestres e veículos, à visibilidade, à facilidade de estacionamento, à renda da vizinhança, à concorrência e ao tipo de atividade permitida.<br><br>
+            A configuração física da loja também é muito importante. Muitas lojas no térreo de prédios residenciais têm fachada estreita, pouca visibilidade, pé-direito baixo, ausência de estacionamento e restrições à instalação de exaustão, à carga e descarga ou ao funcionamento noturno. Isso limita bastante o uso delas.<br><br>
+            Nunca se esqueça: quando a construtora vende a loja, ela faz um bom negócio. Quando você compra, pode estar fazendo um bom ou um péssimo negócio.<br><br>
+            Se você nunca teve lojas e não tem experiência nesse ramo, fique longe delas ou procure uma assessoria confiável. Lojas sem atratividade são difíceis de passar adiante.</p>
+            <a href="#indice">índice</a>
+        </article>
+    
+        <article id="galeria-fechada">
+            <h2> Pegadinha: loja em galeria de acesso único</h2>
+            <p>Nem toda galeria comercial é, de fato, uma boa galeria para comércio.<br><br>
+            A galeria clássica, bem localizada, tem uma característica essencial: ela liga uma rua à outra. As pessoas entram por um lado, atravessam o quarteirão e saem pelo outro.<br><br>
+            Nesse percurso natural, passam pelas vitrines, descobrem lojas, comparam produtos e acabam consumindo.<br><br>
+            O movimento não depende apenas de alguém querer ir especificamente até uma loja. A própria circulação de pedestres cria oportunidade de venda.<br><br>
+            O problema é a galeria de acesso único: aquela que tem apenas uma entrada e não leva o pedestre a lugar nenhum.<br><br>
+            A pessoa só entra ali se já tiver um motivo específico. Não há passagem espontânea, não há travessia natural, não há fluxo casual de consumidores.<br><br>
+            Para o lojista, isso muda tudo. Uma loja nesse tipo de galeria tem pouca visibilidade, baixo movimento e depende quase exclusivamente de sua freguesia.<br><br>
+            Para o investidor, o risco é claro: maior dificuldade para alugar, aluguel mais baixo e menor liquidez na revenda.<br><br>
+            Muitas vezes, a galeria parece bonita na planta ou no material de venda, mas o que importa é o comportamento real das pessoas. Elas passam por ali naturalmente? Entram sem compromisso? Circulam em frente às vitrines? Ou precisam tomar a decisão deliberada de entrar em um corredor sem saída?<br><br>
+            Antes de comprar uma loja em galeria, observe o fluxo. Uma boa loja precisa estar onde as pessoas passam.
+</p>
+            <a href="#indice">índice</a>
+        </article>
+        
+        <article id="usado-ou-novo">
+            <h2>Pegadinha: comprar imóvel novo</h2>            
+            <p>Imóvel zero-quilômetro ou com cinco anos de uso?<br><br>
+            Comprar um imóvel zero-quilômetro pode ser uma boa decisão em algumas situações.<br><br>
+            Considerando-se uma sala comercial, se o objetivo é usar a sala para o próprio trabalho ou para montar o consultório de um filho ou uma filha que está começando a carreira, o imóvel novo é bem interessante. É moderno, bonito, recém-entregue e causa uma ótima impressão.<br><br>
+            Quando o objetivo é comprar para alugar, a lógica muda.<br><br>
+            Um prédio com mais de cinco anos de existência é preferível — desde que tenha sido bem construído e esteja em ótimo estado. O motivo é simples: um imóvel recém-entregue costuma ser vendido com preço de lançamento, apelo de novidade e forte campanha comercial.<br><br>
+            Depois de alguns anos, ele perde o brilho que tinha durante o lançamento e o investidor descobre que o seu metro quadrado vale, no mercado, 30% menos do que o de um imóvel similar em lançamento, embora ambos tenham praticamente a mesma vida útil e custo de manutenção.<br><br>
+            Em outras palavras, ao comprar imóvel zero-quilômetro para manter alugado por longo prazo, o investidor joga fora 30% (repito, TRINTA POR CENTO) do capital investido, em comparação com a compra de um imóvel similar usado.<br><br>
+            E há outra vantagem, até maior, em se preferir imóvel usado: depois de cinco anos, o prédio já mostrou quem ele é.<br><br>
+            Se foi mal construído, os problemas já aparecem: rachaduras, infiltrações, falhas de acabamento, pintura manchada ou descascando, manutenção difícil ou defeitos recorrentes.<br><br>
+            Se a administração do condomínio é desleixada, o investidor percebe pela conservação das áreas comuns, pela organização da portaria, pela limpeza, pela segurança e até pelo alto valor da taxa condominial.<br><br>
+            Se o ponto comercial é ruim ou a região está superofertada, isso fica bem evidente: muitas unidades vazias, placas de aluguel e de venda por todos os lados.<br><br>
+            Em um prédio recém-entregue, muitos desses riscos ainda estão escondidos. Tudo parece novo, limpo e promissor. Mas isso não garante que o edifício terá boa liquidez, boa ocupação ou boa conservação no médio prazo.<br><br>
+            Por tudo isso, para quem compra com foco em renda, um imóvel com alguns anos de uso pode ser melhor do que um zero-quilômetro.<br><br>
+            O investidor paga menos, consegue avaliar melhor o desempenho real do prédio e reduz o risco de comprar apenas uma promessa bonita no material de venda.<br><br>
+            Em investimento imobiliário, o melhor negócio nem sempre é o mais novo. Muitas vezes, é o imóvel que já passou pelo teste do tempo.</p>
+            <a href="#indice">índice</a>
+        </article>
+    
+        <article id="sofisticado-demais">
+            <h2>Pegadinha: sala comercial sofisticada demais</h2>            
+            <p>Na hora de comprar uma sala comercial para alugar, muita gente pensa que o melhor investimento é sempre o imóvel premium: a sala mais sofisticada, no prédio mais imponente.<br><br>
+            À primeira vista, isso parece lógico: se o imóvel é melhor, o aluguel deveria ser maior.<br><br>
+            Porém, uma sala comercial de padrão muito alto costuma ter preço de compra mais elevado, condomínio mais caro e uma expectativa de aluguel proporcionalmente maior.<br><br>
+            O problema é que o número de profissionais ou empresas com capacidade de pagar esse aluguel também é menor. Quanto mais caro o imóvel, mais estreito fica o público de potenciais inquilinos.<br><br>
+            Isso aumenta o risco de vacância. A sala pode ser excelente, mas ficar mais tempo vazia porque poucos interessados conseguem arcar com o aluguel, o condomínio, o IPTU e os custos de operação.<br><br>
+            Para o investidor, uma sala vazia não é “top”: é despesa mensal alta.<br><br>
+            Normalmente, é mais fácil alugar uma sala boa, funcional e bem localizada do que uma sala luxuosa demais para o mercado local.<br><br>
+            A lógica é parecida com a dos carros: há muito mais gente capaz de alugar um “Volkswagen” do que uma “Ferrari”. A Ferrari impressiona, mas atende a um público pequeno. O Volkswagen pode não causar o mesmo impacto, mas tem muito mais mercado.<br><br>
+            Para investimento, o ideal não é comprar o imóvel mais sofisticado.<br><br>
+            O ideal é comprar o imóvel com melhor equilíbrio entre preço, localização, condomínio, demanda e capacidade real de locação. Antes de se encantar com um prédio imponente, pergunte: quantos inquilinos nessa região conseguem pagar o aluguel necessário para esse investimento fazer sentido?<br><br>
+            Se a resposta for “poucos”, o imóvel pode ser bonito, mas não será o melhor negócio.</p>
+            <a href="#indice">índice</a>
+        </article>
+    
+        <article id="condominio-alto">
+            <h2>Pegadinha: imóvel com condomínio alto demais</h2>
+            <p>Um dos erros mais comuns na compra de imóvel para investimento é olhar apenas para o preço de compra e para o aluguel esperado, sem considerar o condomínio.<br><br>
+            Condomínio alto é um problema por dois motivos.<br><br>
+            O primeiro aparece quando o imóvel fica desocupado.<br><br>
+            Mesmo sem receber aluguel, o proprietário continua pagando condomínio, IPTU e demais custos fixos. Quanto maior o condomínio, mais caro fica o período de vacância.<br><br>
+            Um imóvel vazio com condomínio baixo incomoda.<br><br>
+            Um imóvel vazio com condomínio alto sangra o caixa do investidor mês após mês.<br><br>
+            O segundo problema aparece na própria negociação do aluguel.<br><br>
+            O locatário não olha apenas para o valor do aluguel. Ele olha para o custo total de ocupação: aluguel, condomínio, IPTU, seguro e demais despesas.<br><br>
+            Quanto maior o custo total da locação, maior a pressão para se reduzir o valor do aluguel, pois taxa condominial e IPTU não dependem de decisão do locador.<br><br>
+            Às vezes, o imóvel parece capaz de gerar um bom aluguel no papel, mas o condomínio alto tira competitividade. O interessado compara com outras opções mais eficientes e percebe que, pelo mesmo custo total, pode alugar algo igual ou melhor!<br><br>
+            Por isso, antes de comprar, o investidor deve perguntar:<br><br>
+            1. Quanto custa manter este imóvel vazio?<br><br>
+            2. Quanto o inquilino terá de pagar no total para ocupá-lo?</p>
+            <a href="#indice">índice</a>
+        </article>
+    
+        <article id="predio-airbnb">
+            <h2>Pegadinha: prédio especializado em Airbnb</h2>
+            <p>Nos últimos anos, popularizou-se o modelo Airbnb de locação subprofissional de imóvel por curta temporada.<br><br>
+As construtoras decidiram aproveitar a moda e lançar empreendimentos visando especificamente o investidor que quer operar no modelo Airbnb.<br><br>
+                A apresentação costuma ser atraente: prédios modernos, unidades compactas, decoração bonita, áreas comuns bem planejadas e a ideia de que o imóvel deverá gerar uma renda maior do que um aluguel tradicional.<br><br>
+                E as construtoras lucram muito com isso, pois cobram MUITO mais pelo metro quadrado do que cobram pelo metro quadrado de um edifício residencial comum!<br><br>
+                Além do preço de aquisição elevado, esse tipo de imóvel apresenta outros riscos que o investidor deve considerar:<br><br>
+                1) Airbnb é um fenômeno novo. A legislação pode mudar e restringir as operações ou torná-las menos lucrativas.<br><br>
+                2) As construtoras continuam lucrando e lançando mais empreendimentos para locação Airbnb. Em algum momento, o mercado ficará superofertado tanto para locação como para venda.<br><br>
+                3) Locação de alta rotatividade aumenta muito a necessidade de manutenção.<br><br>
+                4) A unidade é muito mais dependente de áreas comuns, como a lavanderia coletiva — que não pode falhar e não é administrada por você.<br><br>
+                5) Você quer investir em imóvel ou administrar uma operação de hospedagem?<br><br>
+                Para quem busca renda com mais previsibilidade, o aluguel residencial tradicional é mais simples, mais estável e menos dependente de fatores externos.</p>
+            <a href="#indice">índice</a>
+        </article>
+    
+        <article id="cinco-anos">
+            <h2>Pegadinha: contratos comerciais curtos podem durar muito mais</h2>
+            <p>Muitos proprietários assinam contratos de aluguel comercial, imaginando que poderão retomar o imóvel ao final do período de locação.<br><br>
+            Existe uma exceção importante nas locações de imóveis destinados ao comércio.<br><br>
+            O inquilino pode pedir judicialmente a renovação do contrato quando a locação estiver formalizada por contratos escritos e ininterruptos que, somados, totalizem pelo menos cinco anos, e ele explorar o mesmo ramo de atividade no imóvel há pelo menos três anos.<br><br>
+            Assim, mesmo contratos curtos e sucessivos podem dar ao inquilino o direito de propor ação renovatória.<br><br>
+            Essa regra da Lei do Inquilinato protege o fundo de comércio criado pelo inquilino.<br><br>
+            Ao assinar contratos de locação comercial, o proprietário precisa considerar seus planos para o imóvel.<br><br>
+            Pretende vendê-lo? Pode precisar ocupá-lo? Quer ter liberdade para escolher outro inquilino? Aceita manter a locação por prazo superior ao inicialmente previsto?</p>
+            <a href="#indice">índice</a>
+        </article>
+    
+        <article id="comprar-na-planta">
+            <h2>Pegadinha: comprar imóvel na planta para revender depois</h2>
+            <p>Muita gente compra imóvel na planta para revendê-lo quando a obra ficar pronta. A estratégia parece simples: comprar pelo preço de lançamento e vender mais caro na entrega.<br><br>
+            O problema é que a valorização não é garantida.<br><br>
+            O comprador assume o risco da obra, da construtora e do mercado imobiliário durante vários anos. Nesse período, podem ocorrer atrasos, defeitos construtivos, alterações no projeto, aumento dos custos, queda nas vendas e dificuldades financeiras da incorporadora.<br><br>
+            O imóvel comprado na planta ainda não existe. O comprador adquire a promessa de que ele será construído e entregue conforme o contrato.<br><br>
+            Mesmo quando a obra é entregue corretamente, surge outro problema: muitos compradores podem ter adquirido unidades com a mesma intenção de revenda.<br><br>
+            Na entrega, várias unidades semelhantes aparecem à venda ao mesmo tempo no mesmo prédio. Os proprietários passam a concorrer entre si, o que reduz os preços e aumenta o prazo de venda.<br><br>
+            Além disso, as condições do mercado podem ter mudado completamente entre o lançamento e a conclusão da obra. Juros mais altos, crédito escasso, recessão ou excesso de imóveis à venda afastam compradores e derrubam preços.<br><br>
+            A incorporadora vende o empreendimento com campanha publicitária, equipe comercial, tabela de preços e condições de pagamento planejadas. O proprietário que tenta revender uma unidade depois da entrega não dispõe da mesma estrutura e ainda concorre com outros investidores e, muitas vezes, com unidades remanescentes da própria incorporadora.<br><br>
+            Para saber se houve lucro, não basta comparar o preço de compra com o preço de venda.<br><br>
+            É necessário descontar o rendimento que o capital investido teria proporcionado em uma aplicação financeira, a corretagem, os tributos, as despesas com cartórios, as despesas de condomínio, o IPTU e eventuais despesas de manutenção.<br><br>
+            Depois de descontados todos esses custos, o lucro pode ser inferior ao rendimento de uma aplicação financeira conservadora. Mesmo quando é superior, a diferença precisa compensar o risco da obra, a indisponibilidade do capital e a obrigação de pagar as parcelas até a entrega.<br><br>
+            O comprador também pode precisar abandonar o negócio antes da conclusão. Nesse caso, ele sofrerá multas MUITO pesadas.<br><br>
+            Comprar imóvel na planta para revender depois pode ser lucrativo quando o preço de aquisição é realmente baixo, o produto é adequado, a obra é concluída com relativa rapidez e o imóvel encontra um mercado favorável.<br><br>
+            Não é uma fórmula automática de valorização. O investidor compra hoje um imóvel que ainda não existe para tentar vendê-lo anos depois em um mercado que ainda não conhece.<br><br>
+            LEGISLAÇÃO<br>
+            <a href="https://www.planalto.gov.br/ccivil_03/leis/l4591.htm" target="_blank">Lei nº 4.591/1964 — dispõe sobre condomínios em edificações e incorporações imobiliárias</a><br>
+            <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/L13786.htm" target="_blank">Lei nº 13.786/2018 — disciplina, entre outros pontos, o desfazimento dos contratos de aquisição de imóveis em incorporação imobiliária</a><br></p>
+            <a href="#indice">índice</a>
+        </article>
+        
+        <article id="aluguel-caro">
+            <h2>Meu aluguel está caro?</h2>
+            <p>Assim como as maiores imobiliárias do país, a Uchi Imóveis anuncia os imóveis para locação nos principais portais da internet.<br><br>
+            Um imóvel de *alta demanda*, tipicamente um apartamento de um dormitório, com vaga de garagem, em prédio bem conservado e bem localizado, aluga-se, em média, em 30 dias.<br><br>
+            Se, excetuando-se dezembro, janeiro e fevereiro, após um mês de anúncio, nenhum interessado entrar em contato, é alta a chance de o aluguel estar acima do mercado.<br><br>
+            Se os interessados respondem ao anúncio, mas não marcam visita ao imóvel, o aluguel ainda está acima do mercado, mas não tanto.<br><br>
+            Estar acima do mercado não significa necessariamente que o preço por metro quadrado seja maior do que o das outras ofertas da mesma região. Simplesmente, aos olhos dos interessados, ele é menos atraente do que os concorrentes.<br><br>
+            O imóvel que recebe ao menos uma visita por semana está dentro do mercado. E só não será alugado em breve se tiver defeitos que só aparecem a quem o visita. Nesse caso, o defeito precisa ser corrigido ou o aluguel diminuído.<br><br>
+            Somos sempre a favor de corrigir os defeitos e oferecer um imóvel de qualidade para locação. Mas uma vista feia, posição solar ruim, uma rua muito movimentada, na qual seja difícil estacionar durante uma visita não são corrigíveis. Considere estes pontos quando for comprar um imóvel.<br><br>
+            Insistir em um aluguel com preço acima do mercado normalmente causa prejuízo maior do que reduzir o preço. Enquanto permanece vazio, o imóvel gera despesa de condomínio, IPTU e eventual manutenção.</p>
+            <a href="#indice">índice</a>
+        </article>
+        
+        <article id="baixar-aluguel">
+            <h2>Vale a pena baixar o aluguel para alugar mais rápido?</h2>
+            <p>Depende do tamanho do desconto e do risco de o imóvel continuar vazio.<br><br>
+            No caso de o candidato a inquilino pedir desconto de R$ 50,00, o impacto negativo na receita bruta é de R$ 1.500,00 na locação residencial de 30 meses.<br><br>
+            Descontados o IR e a taxa de administração da imobiliária, esse impacto negativo seria reduzido a, digamos, R$ 1.200,00.<br><br>
+            Se, por mês, o imóvel custa R$ 600,00 em IPTU e taxa condominial, alugá-lo hoje com desconto equivale numericamente a alugá-lo daqui a 60 dias sem desconto.<br><br>
+            Se você não alugar hoje, poderá demorar mais ou menos do que os 60 dias do exemplo para alugar.<br><br>
+            Outros fatores devem ser considerados:<br><br>
+            1) O imóvel atrai vários interessados ou não?<br><br>
+            2) O perfil do candidato é o ideal em termos de crédito, responsabilidade e de cuidado com o imóvel?<br><br>
+            Achamos que uma boa oportunidade de contratar a locação não deve ser desperdiçada.<br><br>
+            Nada impede que ao fim de 30 meses, o aluguel seja renegociado a valor de mercado, sem desconto desta vez.</p>
+            <a href="#indice">índice</a>
+        </article>
+        
+        <article id="conta-notarial">
+            <h2>Conta notarial: mais segurança na compra e venda de imóvel</h2>
+            <p>Na compra e venda de um imóvel, existe um momento delicado: a hora de pagar e assinar a escritura.<br><br>
+            Se o comprador transfere o dinheiro primeiro, corre o risco de o vendedor não assinar a escritura, surgir algum problema de última hora ou aparecer uma pendência documental.<br><br>
+            Se o vendedor assina primeiro, pode ficar inseguro quanto ao recebimento do valor combinado. Mesmo que o comprador solicite ao seu banco a transferência eletrônica imediatamente, ela pode demorar horas, por motivo de segurança.<br><br>
+            A lei da Conta Notarial foi criada justamente para eliminar os riscos e desconfortos deste momento.<br><br>
+            Também chamada de conta garantia ou escrow account notarial, ela permite que o valor da transação fique depositado em uma conta vinculada ao Colégio Notarial do Brasil, sob administração do tabelião, até que as condições previamente combinadas sejam cumpridas.<br><br>
+            A escritura só é liberada para assinatura depois que o comprador pagar o boleto da Conta Notarial referente ao imóvel: risco zero ao vendedor.<br><br>
+            O dinheiro só é liberado ao vendedor após o Cartório de Registro de Imóveis averbar a escritura na matrícula do imóvel: risco zero ao comprador (esta condição tem de ser solicitada; o normal é liberar-se o pagamento após a assinatura da escritura).<br><br>
+            A compra do imóvel não termina na assinatura da escritura.<br><br>
+            A escritura pública formaliza a venda, mas a propriedade do imóvel só é efetivamente transferida com o registro no Cartório de Registro de Imóveis.</p>
+            <a href="#indice">índice</a>
+        </article>
+    
+        <article id="imovel-investidor">
+            <h2>O que é um imóvel de investidor?</h2>
+            <p>"Tenho um imóvel que, há anos, não consigo alugar e dá muita despesa. Ele é um passivo, certo?"<br><br>
+            Não. Todo imóvel é um ativo, mesmo quando inconveniente. Passivo é aquilo que você deve a alguém.<br><br>
+            O fato de você, todo mês, tirar dinheiro do bolso significa que seu imóvel é um ativo ONEROSO, quando você gostaria que ele fosse um ativo RENTÁVEL — você mantém o imóvel e recebe dinheiro.<br><br>
+            O único cenário em que alguém compra um imóvel como investimento e não se importa que ele não gere renda é se o comprou especulativamente, para vender com lucro no futuro.<br><br>
+            O imóvel de investimento é o imóvel rentável e/ou especulativo!<br><br>
+            Na Uchi Imóveis, somos especializados em locação. E queremos que você tenha ativos rentáveis. Se um ativo seu, além de ser rentável, também tiver uma excelente perspectiva de valorização, é melhor ainda.<br><br>
+            O que você realmente deve evitar é comprar um imóvel que nem é rentável nem tem perspectiva real de forte valorização, acreditando que está fazendo um investimento. Esse não é um imóvel de investimento.<br><br>
+            Nesse caso, você apenas imobilizou seu capital e terá despesas: este negócio diminuiu sua riqueza!<br><br>
+            O compromisso do corretor de imóveis é com a celebração da compra e venda. A rentabilidade do imóvel não é responsabilidade dele, é sua. Você deve escolher o imóvel certo e pagar o preço adequado.<br><br>
+            Se você quer um imóvel rentável, considere tudo o que escrevemos nos outros artigos.<br><br>
+            E lembre-se de que seus piores inimigos sempre serão:<br><br>
+            1. alta vacância<br>
+            2. má conservação e alto custo de manutenção<br>
+            3. IPTU e taxa condominial elevados<br>
+            4. estacionamento insuficiente<br>
+            5. dificuldade para eventual venda<br><br>
+            Se seu capital não é suficiente para adquirir um imóvel de investimento, invista em outra coisa. Por exemplo, existem ótimos FIIs (Fundos de Investimento Imobiliário) negociados na bolsa de valores.</p>
+            <a href="#indice">índice</a>
+        </article>        
+    </div>
+        
+    <footer id="page-footer" class="selectable-text">
+
+        <div class="page-footer-column">    
+            <a href="index.html"><p><img id="page-footer-logo" src="images/logo-transparente.png" alt="Uchi Imóveis"></p></a>        
+            <p id="page-footer-slogan">Lares Selecionados &amp; Gestão Ativa</p>
+            
+            <!-- p class="page-footer-title">REGISTRO</p -->
+            <p><span class="page-footer-field">CRECI:</span>28561 J</p>
+            <p><span class="page-footer-field">CNPJ: </span>63.595.950/0001-26</p> 
+        </div>
+        
+        <div class="page-footer-spacer"></div>
+
+        <div class="page-footer-column">
+            <p class="page-footer-title">CONTATO</p> 
+                      
+            <p><a href="tel:+5551993193073"><svg class="page-footer-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>(51) 99319-3073</p>
+            
+            <p><a href="mailto:contato@uchimoveis.com"><svg class="page-footer-icon" viewBox="0 0 24 24" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></a>contato@uchimoveis.com</p> 
+                      
+            <p><a href="https://www.instagram.com/uchiimoveis" rel="noopener noreferrer" target="_blank"><svg class="page-footer-icon" viewBox="0 0 24 24" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></a>instagram.com/uchiimoveis</p> 
+                      
+            <p><a id="page-footer-whatsapp-link" href="" rel="noopener noreferrer" target="_blank"><svg id="page-footer-whatsapp-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"></path></svg></a>(51) 99319-3073</p>
+        </div>
+
+        <div class="page-footer-spacer"></div>
+
+        <div class="page-footer-column">
+             <p class="page-footer-title">ENDEREÇO</p> 
+             
+             <p><a href="https://www.google.com/maps/place/R.+Alcides+Gonzaga,+240+-+Boa+Vista,+Porto+Alegre+-+RS,+90480-020" rel="noopener noreferrer" target="_blank"><svg class="page-footer-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg></a><span class="page-footer-address-text">Rua Alcides Gonzaga, 240<br>&nbsp; &nbsp; &nbsp; Boa Vista - Porto Alegre<br>&nbsp; &nbsp; &nbsp; RS - CEP 90480-020 </span></p>
+        </div>
+
+        <div id="page-footer-separator"></div>
+        <div id="page-footer-copyright">© 2026 Uchi Imóveis. Todos os direitos reservados.</div>
+    </footer>
+
+    <!-- *floating whatsapp button* -->
+    <a id="floating-whatsapp-link" href="" rel="noopener noreferrer" target="_blank"><svg viewBox="0 0 56 56"><circle cx="28" cy="28" r="28" fill="rgb(37,211,102)"/><g transform="translate(11.2 11.2) scale(1.4)"><path fill="white" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></g></svg></a>   
+     
+    <!-- *floating global menu* -->
+    <input type="checkbox" id="global-menu-control">
+    <div id="global-menu">
+        <div id="global-menu-frame">
+            <a class="global-menu-link" href="index.html">Home</a><br>
+            <a class="global-menu-link current" href="">Investidores</a><br>
+            <a class="global-menu-link" href="proprietarios.html">Proprietários</a><br>
+            <a class="global-menu-link" href="inquilinos.html">Inquilinos</a><br>
+        </div>
+    </div>
+
+    <script>
+"use strict";
+
+// whatsapp links /////////////////////////////////////////////////////////////
+
+function isMobileDevice() {
+    
+    if (typeof window.orientation != "undefined") { return true }
+
+    if (! ("maxTouchPoints" in navigator)) { return false }
+    
+    return (navigator.maxTouchPoints > 0) 
+}
+
+function createWhatsAppHref(phoneNumber, message) {
+
+    const prefix = isMobileDevice() ? "api" : "web"
+
+    return "https://" + prefix + ".whatsapp.com/send?phone=" + 
+    
+    phoneNumber + "&text=" + encodeURIComponent(message)
+}
+
+function setWhatsAppLinks(phoneNumber, message, ids) {
+
+    const href = createWhatsAppHref(phoneNumber, message)
+
+    for (const id of ids) { document.getElementById(id).href = href }
+}
+    </script>    
+    <script>
+"use strict"
+
+const PHONE_NUMBER = "5551993193073" // remember the link and the label about the fone icon!
+
+const message = "Olá! Gostaria de saber mais sobre investir em imóveis."
+
+setWhatsAppLinks(PHONE_NUMBER, message, [ "floating-whatsapp-link", "page-footer-whatsapp-link" ])
+
+    </script>
+</body>
+</html>
+
