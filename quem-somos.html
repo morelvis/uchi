@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem Somos | Uchi Imóveis</title>
+    <meta name="description" content="A história da Uchi Imóveis">
+    <meta name="keywords" content="imobiliária, imóveis, locação, Porto Alegre - RS">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <meta property="og:url" content="https://uchiimoveis.com">
+    <meta property="og:locale" content="pt_BR">    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Uchi Imóveis">
+    <meta property="og:description" content="Imobiliária premium especializada em locação de imóveis em bairros centrais e nobres de Porto Alegre - RS">
+    <meta property="og:image" content="https://uchiimoveis.com/images/og-image.png">
+
+    <meta name="twitter:title" content="Uchi Imóveis">
+    <meta name="twitter:description" content="Imobiliária premium especializada em locação de imóveis em bairros centrais e nobres de Porto Alegre - RS">
+    <meta name="twitter:card" content="summary_large_image">    
+    <meta name="twitter:image" content="https://uchiimoveis.com/images/og-image.png">
+
+    <style>
+        /* latin */
+        @font-face {
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        /* latin */
+        @font-face {
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        /* latin */
+        @font-face {
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        /* latin */
+        @font-face {
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        /* latin */
+        @font-face {
+            font-family: 'Playfair Display';
+            font-style: italic;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/playfairdisplay/v40/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_qiTXtHA-Q.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        
+        :root {
+            --max-body-width: 1600px;
+            
+            --white: rgb(249,250,251); 
+            --black: rgb(15,28,46);    
+            --cream: rgb(246,244,238); 
+            --gold:  rgb(203,157,77);
+            --greyblue: rgb(98,112,132);
+            
+            --white80: rgba(249,250,251,0.8); 
+            --black80: rgba(15,28,46,0.8);     
+            --cream80: rgba(246,244,238,0.8);  
+            
+            --gold-light: rgb(217,198,166);
+            --gold-red:   rgb(210,150,60);
+            --gold-dark:  rgb(180,145,75);
+            
+            --dmsans: "DM Sans", system-ui, sans-serif;
+            --playfair: "Playfair Display", Georgia, serif;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+        html { 
+            color: var(--white);        
+            background-color: var(--black);
+        }
+        body {
+            width: 100%;
+            height: 100%;
+            min-width: 360px;
+            max-width: var(--max-body-width);
+            margin: 0 auto;
+            line-height: 1.5;
+            user-select: none;
+            font-family: var(--dmsans);
+        } 
+        div {
+            text-align: center;
+        }
+        img {
+            display: inline-block;
+            vertical-align: top;
+        }
+        a {
+            text-decoration: none;
+        } 
+        button {
+            cursor: pointer;
+        }
+        .no-break {
+            white-space: nowrap;
+        }
+        .selectable-text {
+            user-select: text;
+        }
+        #floating-whatsapp-link {
+            position: fixed;
+            z-index: 50;
+            width: 56px;
+            height: 56px;
+            right: 24px;
+            bottom: 24px;
+            filter: drop-shadow(1px 1px 3px rgba(0,0,0,0.6)); 
+            transition: all .2s ease-in-out;
+        }
+        #floating-whatsapp-link:hover {
+            transform: scale(1.1);
+        } 
+        #global-menu-control {
+            display: none;
+        }
+        #global-menu-control:checked ~ #global-menu {
+          transform: translateY(0);
+        }
+        #global-menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            padding-top: 80px;
+            transform: translateY(-100%);
+            transition: transform 0.3s ease;
+            z-index: 99;
+            background-image: url("images/desktop-hero.webp");
+            background-size: cover;
+            background-position: center center; 
+        } 
+        #global-menu-frame {
+            display: inline-block;
+            padding-top: 150px;
+            text-align: left;        
+        } 
+        #global-menu-frame a {
+            font-size: 40px; 
+            font-family: var(--playfair);
+            font-style: italic;
+            color: var(--white);  
+        }
+        #global-menu-frame a.current {
+            pointer-events: none;
+            color: var(--gold-red);
+        }
+        #page-header
+        {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            min-height: 64px;
+            white-space: nowrap;
+            text-align: center;
+            border-bottom: 1px solid rgba(40,70,90,0.5);
+            color: var(--white);
+            background-color: var(--black);
+        }
+        #page-header-logo
+        {
+            width: 140px;
+            height: 42px;
+            margin-top: 12px;   
+        }
+        #page-header-spacer {
+            display: inline-block;
+            width: 140px;
+            max-width: 900px;
+            visibility: hidden;
+        }
+        @media (min-width: 500px) {
+            #page-header-spacer { width: calc((100% - 220px) * 0.8); }
+        }        
+        #page-header-hamburguer {
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 32px;
+            cursor: pointer;
+        }
+        #hero-div {
+            min-height: 100vh;
+            padding: 90px 10px 30px 10px;
+            overflow-anchor: none; /* avoid chrome bug on animation */
+            background-image: url("images/desktop-hero.webp");
+            background-size: cover;
+            background-position: center center;
+            animation: hero-div 0.75s ease-out;
+        }
+        @keyframes hero-div {
+            from { padding-top: 2000px; } to { padding-top: 90px; }
+        }    
+        #page-footer {
+            width: 100%;
+            padding: 20px 0 30px 0;        
+            text-align: center;
+            font-size: 16px;
+            letter-spacing: 1px;
+            color: var(--cream80);
+        }        
+        .page-footer-column {
+            display: inline-block;
+            width: 340px;
+            padding-left: 20px;
+            margin-top: 30px;
+            text-align: left;
+            vertical-align: top;
+        }   
+        .page-footer-spacer {
+            display: inline-block;        
+            width: max(0px, calc((100% - 1090px) / 4));
+            height: 20px;
+        }
+        #page-footer-logo {
+            width: 197px;
+            height: 59px;
+            margin-top: 13px;
+        }
+        #page-footer-slogan {
+            padding-bottom: 10px;
+            opacity: 0.75;
+        }
+        .page-footer-title {      
+            padding: 20px 0 10px 0;
+            opacity: 0.75;
+        }
+        .page-footer-icon {        
+            display: inline-block;
+            width: 18px;
+            height: 18px;      
+            margin-right: 12px;
+            vertical-align: -4px;
+            color: var(--gold);
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+        #page-footer-whatsapp-icon {        
+            display: inline-block;
+            width: 18px;
+            height: 18px;      
+            margin-right: 12px;
+            vertical-align: -4px;
+            color: var(--gold);
+            fill: currentColor;
+            stroke: none;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+        .page-footer-field {        
+            margin-right: 10px;      
+            color: var(--gold);
+        } 
+        #page-footer-separator {
+            margin-top: 50px;
+            padding-bottom: 30px;
+            border-top: 1px solid var(--cream);
+            opacity: 0.2;
+        }
+        #page-footer-copyright {
+            font-size: 16px;
+            color: var(--cream);
+            opacity: 0.3;
+            
+        } 
+        
+        /***************************/
+        /****  utility classes  ****/
+        /***************************/
+        
+        .gold-trace {
+            display: block;
+            width: 100px;
+            margin: 0 auto;
+            height: 2px;
+            background-color: var(--gold);    
+        }  
+        .gold-button {
+            display: inline-block;
+            padding: 22px 60px;
+            font-size: 17px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            border-radius: 4px;
+            color: var(--black80);
+            background-color: var(--gold);
+        }   
+                 
+        /* unused */
+        .triple-card { 
+            display: inline-block;
+            width: 350px;
+            height: 200px;
+            padding: 20px;
+            margin-top: 50px;
+            vertical-align: top;
+            text-align: left;
+            font-size: 18px; 
+            font-family: sans-serif;  
+            border-radius: 15px;
+            border: 1px solid dimgrey;
+            filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.6));
+            color: black;
+            background-color: lightgrey;
+        }
+        @media (min-width: 650px) {
+            .triple-card { margin-left: 20px; margin-right: 20px; }
+        }
+        @media (min-width: 1300px) {
+            .triple-card { margin-left: 30px; margin-right: 30px; }
+        }
+    </style>    
+    <style>   
+        /***************************/
+        /****    local    CSS   ****/
+        /***************************/     
+        #hero-title {
+            padding: 60px 0 45px 0;
+            font-family: var(--playfair);
+            font-size: 45px;
+            font-weight: 400;
+            color: var(--gold);
+        } 
+        @media (min-width: 600px) {
+            #hero-title { font-size: 60px; }
+        }
+        #hero-description {
+            padding: 40px 20px 75px 20px;
+            font-size: 22px;
+            font-weight: 400;
+            color: var(--cream80);
+            opacity: 0.9;
+        }
+        #hero-break { display: none; }
+        @media (min-width: 600px) {
+            #hero-break { display: block; }
+        } 
+        #historia {
+            padding: 70px 4px 90px 4px;
+            text-align: center;
+            color: var(--black);  
+            background-color: var(--white);
+        }
+        #historia h1 {
+            padding-bottom: 40px;
+            font-family: var(--playfair);
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 1.2;
+        }
+        #historia p {
+            display: inline-block;
+            padding: 10px 10px 30px 10px;
+            width: 100%;
+            max-width: 900px;
+            text-align: justify;
+            font-size: 18px;
+            color: var(--greyblue);
+        }
+        #moreira {
+            padding: 50px 10px;        
+            color: var(--white);
+            background-color: var(--black);
+        }
+        #moreira h2 {
+            padding-bottom: 70px;
+            font-size: 32px;
+            font-family: var(--playfair);
+            font-weight: 400;
+            font-style: italic;
+            color: var(--gold);
+        }
+        #moreira img {
+            width: 200px;
+        }
+        #moreira p {
+            padding: 30px 0 10px 0;
+            font-size: 15px;
+            letter-spacing: 2px;
+            color: var(--white80);
+            opacity: 0.8;
+        }
+        #kiyoshi {
+            padding: 50px 10px;     
+            background: var(--gold-light);
+        }
+        #kiyoshi h2 {
+            padding-bottom: 70px;
+            font-size: 32px;
+            font-family: var(--playfair);
+            font-weight: 400;
+            font-style: italic;
+            color: var(--black);
+        }
+        #kiyoshi img {
+            width: 200px;
+        }
+        #kiyoshi p {
+            display: inline-block;
+            padding-top: 30px;
+            font-size: 15px;
+            letter-spacing: 2px;
+            color: var(--black);
+        }
+    </style>        
+</head>
+<body>
+
+    <header id="page-header">
+        <a href="index.html"><img id="page-header-logo" src="images/logo-transparente.png" alt="Uchi Imóveis"></a>
+        <div id="page-header-spacer"></div>
+        <label for="global-menu-control" id="page-header-hamburguer">&#9776;</label>
+    </header>
+    
+    <div id="hero-div">
+        <h1 id="hero-title">QUEM SOMOS</h1>
+        <div class="gold-trace"></div>
+        <p id="hero-description">
+             Como e porque a Uchi Imóveis nasceu
+        </p>
+    </div>
+        
+    <div id="historia">
+        <h1>Nossa origem</h1>
+        <div class="gold-trace"></div>
+        <br>
+        <p>A Uchi Imóveis é uma imobiliária premium criada pelo engenheiro eletrônico Luís Kiyoshi e pelo administrador Roberto Moreira. Ela foi criada para administrar imóveis de familiares, tradicionais investidores do mercado imobiliário, que estavam muito insatisfeitos com as empresas imobiliárias estabelecidas.<br><br>
+        Problemas que ocorreram com outras imobiliárias:<br><br> 
+        * excesso de taxas (inclusive para inquilinos)<br>
+        * não comunicação de reclamações dos inquilinos<br>
+        * omissão na gestão da manutenção predial<br>
+        * indicação de péssimos profissionais de manutenção predial<br>
+        * multas abusivas para aprisionar o proprietário<br>
+        * dificuldade de comunicação com a imobiliária<br>
+        * falta de assessor qualificado<br>
+        * assédio de corretores de imóveis<br>
+        * indicação para compra de imóveis ruins e/ou caros</p><br>
+        <div class="gold-trace"></div><br>
+        <p>O termo "uchi" no idioma japonês significa "lar". E o nosso logotipo é baseado no respectivo ideograma.<br><br>
+        Nosso objetivo é oferecer uma experiência premium para nossos clientes (proprietários) e também para seus inquilinos.</p>
+    </div>
+
+    <div id="moreira">        
+        <h2>"Conhecemos as dores dos locadores. Na Uchi, nós acabamos com elas."</h2>
+        <img src="images/moreira-564x564.webp" alt="ADM. ROBERTO MOREIRA"><br>
+        <p>ADM. ROBERTO MOREIRA — <span class="no-break">SÓCIO FUNDADOR UCHI IMÓVEIS</span></p>
+    </div>
+  
+    <div id="kiyoshi">
+        <h2>"Na hora de comprar ou vender, buscamos o melhor negócio para o cliente."</h2>
+        <img src="images/kiyoshi-564x564.webp" alt="ENG. LUÍS KIYOSHI"><br>
+        <p>ENG. LUÍS KIYOSHI — <span class="no-break">CEO UCHI IMÓVEIS</span></p>
+    </div>    
+    
+    <footer id="page-footer" class="selectable-text">
+
+        <div class="page-footer-column">    
+            <a href="index.html"><p><img id="page-footer-logo" src="images/logo-transparente.png" alt="Uchi Imóveis"></p></a>        
+            <p id="page-footer-slogan">Lares Selecionados &amp; Gestão Ativa</p>
+            
+            <!-- p class="page-footer-title">REGISTRO</p -->
+            <p><span class="page-footer-field">CRECI:</span>28561 J</p>
+            <p><span class="page-footer-field">CNPJ: </span>63.595.950/0001-26</p> 
+        </div>
+        
+        <div class="page-footer-spacer"></div>
+
+        <div class="page-footer-column">
+            <p class="page-footer-title">CONTATO</p> 
+                      
+            <p><a href="tel:+5551993193073"><svg class="page-footer-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>(51) 99319-3073</p>
+            
+            <p><a href="mailto:contato@uchimoveis.com"><svg class="page-footer-icon" viewBox="0 0 24 24" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></a>contato@uchimoveis.com</p> 
+                      
+            <p><a href="https://www.instagram.com/uchiimoveis" rel="noopener noreferrer" target="_blank"><svg class="page-footer-icon" viewBox="0 0 24 24" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></a>instagram.com/uchiimoveis</p> 
+                      
+            <p><a id="page-footer-whatsapp-link" href="" rel="noopener noreferrer" target="_blank"><svg id="page-footer-whatsapp-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"></path></svg></a>(51) 99319-3073</p>
+        </div>
+
+        <div class="page-footer-spacer"></div>
+
+        <div class="page-footer-column">
+             <p class="page-footer-title">ENDEREÇO</p> 
+             
+             <p><a href="https://www.google.com/maps/place/R.+Alcides+Gonzaga,+240+-+Boa+Vista,+Porto+Alegre+-+RS,+90480-020" rel="noopener noreferrer" target="_blank"><svg class="page-footer-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg></a><span class="page-footer-address-text">Rua Alcides Gonzaga, 240<br>&nbsp; &nbsp; &nbsp; Boa Vista - Porto Alegre<br>&nbsp; &nbsp; &nbsp; RS - CEP 90480-020 </span></p>
+        </div>
+
+        <div id="page-footer-separator"></div>
+        <div id="page-footer-copyright">© 2026 Uchi Imóveis. Todos os direitos reservados.</div>
+    </footer>
+
+    <!-- *floating whatsapp button* -->
+    <a id="floating-whatsapp-link" href="" rel="noopener noreferrer" target="_blank"><svg viewBox="0 0 56 56"><circle cx="28" cy="28" r="28" fill="rgb(37,211,102)"/><g transform="translate(11.2 11.2) scale(1.4)"><path fill="white" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></g></svg></a>              
+    
+    <!-- *floating global menu* -->
+    <input type="checkbox" id="global-menu-control">
+    <div id="global-menu">
+        <div id="global-menu-frame">
+            <a class="global-menu-link" href="index.html">Home</a><br>
+            <a class="global-menu-link" href="investidores.html">Investidores</a><br>
+            <a class="global-menu-link" href="proprietarios.html">Proprietários</a><br>
+            <a class="global-menu-link" href="inquilinos.html">Inquilinos</a><br>
+            <a class="global-menu-link current" href="">Quem Somos</a><br>
+        </div>
+    </div>  
+
+    <script>
+"use strict";
+
+// whatsapp links /////////////////////////////////////////////////////////////
+
+function isMobileDevice() {
+    
+    if (typeof window.orientation != "undefined") { return true }
+
+    if (! ("maxTouchPoints" in navigator)) { return false }
+    
+    return (navigator.maxTouchPoints > 0) 
+}
+
+function createWhatsAppHref(phoneNumber, message) {
+
+    const prefix = isMobileDevice() ? "api" : "web"
+
+    return "https://" + prefix + ".whatsapp.com/send?phone=" + 
+    
+    phoneNumber + "&text=" + encodeURIComponent(message)
+}
+
+function setWhatsAppLinks(phoneNumber, message, ids) {
+
+    const href = createWhatsAppHref(phoneNumber, message)
+
+    for (const id of ids) { document.getElementById(id).href = href }
+}
+    </script>       
+    <script>
+"use strict"
+
+const PHONE_NUMBER = "5551993193073" // remember the link and the label about the fone icon!
+
+const message = "Olá! Gostaria de saber mais sobre a Uchi Imóveis!"
+setWhatsAppLinks(PHONE_NUMBER, message, [ "floating-whatsapp-link", "page-footer-whatsapp-link" ])
+
+    </script>
+</body>
+</html>
+
